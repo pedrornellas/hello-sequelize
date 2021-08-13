@@ -1,7 +1,7 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": "741963",
+    "password": "",
     "database": "dhschool",
     "host": "127.0.0.1",
     "dialect": "mysql"

@@ -15,20 +15,20 @@ const run = async () => {
   const alunos = await db.Aluno.findAll();
   print(alunos);
 
-  log("Rodrigo");
+  log("X");
   line();
-  const rodrigo = await db.Aluno.findOne({ where: { nome: "Rodrigo" } });
-  print(rodrigo);
+  const X = await db.Aluno.findOne({ where: { nome: "X" } });
+  print(X);
 
   log("Aluno.id = 1");
   line();
   const aluno1 = await db.Aluno.findByPk(1);
   print(aluno1);
 
-  log("Alunos que começam com a letra R");
+  log("Alunos que começam com a letra X");
   line();
-  const alunosR = await db.Aluno.findAll({ where: { nome: {[Op.like]: 'R%' } }});
-  print(alunosR);
+  const alunosX = await db.Aluno.findAll({ where: { nome: {[Op.like]: 'X%' } }});
+  print(alunosX);
 
   
   log("Todos alunos desc");
